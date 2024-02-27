@@ -2,13 +2,10 @@
 * {
     font-family: 'Raleway', sans-serif;
     max-width: 1440px ;
+    max-height: 1889.02px;
 }
 
-body {
-    margin: 0px 50px 0px 50px ;
-    gap: 30px;
-    
-}
+
 h1{
     size: 22px;
 }
@@ -24,23 +21,43 @@ h4{
 h5{
     size: 15px;
 }
+
+body{
+    width: 1,440px;
+    height: 1,722.02px;
+    padding: 0px, 50px, 0px, 50px;
+    gap: 35px;
+
+}
 /*Css header*/
 .header_contenair {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    height: 79px ;
+}
+
+.logo {
+    width: 161px;
+    height: 79px;
+    padding: 30px 50px 30px 50px;
+    gap: 10px; 
 }
 
 .logo_booki {
-    width: 61px;
+    width: 61.09px;
     height: 19px;
-    
 }
 
 .nav_bar {
     display: flex;
-    gap: 68px ;
-    padding: 0px 50px 0px 50px;
+    justify-content: right;
+    width: 344px;
+    height: 35px;
+    left: 1096px;
+    padding: 0px 50px 0px 50px; 
+    gap: 68px;
 }
 
 ul {
@@ -56,18 +73,21 @@ ul {
 }
 
 /*Css Main*/
-.main_contenair {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+
 
 .section_1{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    width: 1340px;
+    height: 281px;
+    gap: 35px;
 }
 
+.section_1_title{
+    width: 1340px;
+    height: 53px;
+    gap:8px;
+}
 .research_bar{
     display: flex;
     width: 377px;
@@ -111,6 +131,8 @@ ul {
 .filtres_bar {
     display: flex;
     align-items: center;
+    width: 758px;
+    height: 50px;
     gap: 15px;
 }
 
@@ -142,6 +164,8 @@ ul {
 .section_1_title_2 {
     display: flex;
     align-items: center;
+    width: 1340px;
+    height: 24px;
     gap: 10px;
 }
 
@@ -157,7 +181,9 @@ ul {
 }
 .section_2 {
     display: flex;
-    gap: 30px;
+    width: 1340px;
+    height: 614px;
+    gap: 40px;
 }
 
 .section_left {
@@ -175,6 +201,8 @@ ul {
 .ligne{
     display: flex;
     flex-direction: row;
+    width: 811px;
+    height: 207.25px;
     gap: 30px;
 }
 .img_hebergement_left {
@@ -182,7 +210,7 @@ ul {
     height: 124px;
     border-radius: 20px 20px 0px 0px;
 }
-.card_container{
+.card_container_left{
     width: 250.33px;
     height: 64.25px;
     display: flex;
@@ -200,6 +228,8 @@ ul {
 }
 
 .hotel_note {
+    
+    height: 13.25px;
     margin: 0px 0px 0px 10px;
 }
 .card_left{
@@ -210,7 +240,6 @@ ul {
     width: 250.33px;
     height: 207.25px;
     border-radius: 20px;
-    padding: 0px 0px 15 px 0px;
     filter: drop-shadow( 0px 3px 5px #0000001A);    
     gap: 4px;   
 }
@@ -227,12 +256,14 @@ ul {
     gap: 30px; 
 }
 .section_right_title {
-    padding: 0px 0px 15px 0px;
+   width: 369px;
+   height: 26px;
 }
 .card_populaires {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 20px 0px;
+    width: 369px;
+    height: 498px;
     gap: 30px;
 
 }
@@ -242,10 +273,8 @@ ul {
     border: 5px solid white;
     width: 369px;
     height: 146px;
-    border-radius: 20px ;
-    padding-bottom: 10px;
-    filter: drop-shadow( 0px 3px 5px #0000001A);
-    gap: 20px;
+    border-radius: 20px ; 
+    filter: drop-shadow( 0px 3px 5px #0000001A);  
 }
 
 .img_hebergement_right{
@@ -254,6 +283,14 @@ ul {
     border-radius: 20px 0px 0px 20px;
 }
 
+.card_container_right{
+    width: 246px;
+    height: 136px;
+    top: 5px;
+    left: 123px;
+    padding: 10px 5px 5px 15px;
+    gap: 24px;
+}
 .note {
     padding: 60px 0px 0px 10px;
 }
@@ -268,15 +305,21 @@ ul {
 .section_3{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 1340px;
+    height: 559.02px;
+    padding: 30px;
     gap: 30px; 
 }
-
+.ligne_activites{
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    height: 439px;
+    gap: 30px;
+}
 .card_activites{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background: white;
     width: 297.5px;
     height: 439px;
@@ -285,18 +328,19 @@ ul {
 }
 
 .img_activites{
-    width: 297.5px ;
-    height: 380px;
+    width: 100% ;
+    height: 100%;
     border-radius: 20px 20px 0px 0px;
  }
 
+ .card_activites_title {
+    width: 297.5px;
+    height:  59px;
+    padding: 20px, 19px, 20px, 19px;
+    gap: 10px;
+    
 
-.section_right_title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
+ }
 .fa-solid{
     color:#0065FC;
     width: 18px;
@@ -308,14 +352,18 @@ ul {
     display: flex;
     background-color: #F2F2F2;
     justify-content: space-between;
-    gap: 30px;
-    max-height: 1441.02px;
+    width: 1340px;
+    height:163px ;
 }
 
 .footer_list {
     display: flex;
     flex-direction: column;
-    padding: 20px ;
-    gap: 30px ;
-
+    align-items: left;
+    width: 446.67px;
+    height: 163px; 
+    padding: 20px; 
+    gap: 15px ;
 }
+
+
