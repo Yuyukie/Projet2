@@ -1,10 +1,12 @@
 /*Css Général*/
 * {
     font-family: 'Raleway', sans-serif;
-    max-width: 1440px ;
+    max-width: 1441px ;
     max-height: 1889.02px;
+    top: 188px;
+    left: 1599px;
+    margin: 0px;
 }
-
 
 h1{
     size: 22px;
@@ -17,29 +19,25 @@ h3{
 }
 h4{
     size: 16px;
+    font-weight: 400;
 }
 h5{
     size: 15px;
+    font-weight: 400;
 }
 
-body{
-    width: 1,440px;
-    height: 1,722.02px;
-    padding: 0px, 50px, 0px, 50px;
-    gap: 35px;
 
-}
 /*Css header*/
 .header_contenair {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 1440px;
     height: 79px ;
+    margin-left: 30px;
 }
 
 .logo {
-    width: 161px;
+    width: 161.09px;
     height: 79px;
     padding: 30px 50px 30px 50px;
     gap: 10px; 
@@ -53,10 +51,10 @@ body{
 .nav_bar {
     display: flex;
     justify-content: right;
-    width: 344px;
+    width: 80%;
     height: 35px;
-    left: 1096px;
-    padding: 0px 50px 0px 50px; 
+    padding: 0px 50px 0px 50px;
+    margin-top: 20px; 
     gap: 68px;
 }
 
@@ -66,31 +64,45 @@ ul {
 
 .nav_link {
     text-decoration: none;
+    background: none;
+    border: none;
 }
 
 .nav_link:hover {
     text-decoration: overline #0065FC;
+    color: #0065FC;
 }
 
 /*Css Main*/
 
+.main_contenair{
+    width: 1,440px;
+    height: 1,722.02px;
+    padding: 0px, 50px, 0px, 50px;
+    gap: 35px;
+}
+/*Css section Recherche*/
 
 .section_1{
     display: flex;
     flex-direction: column;
     width: 1340px;
-    height: 281px;
+    height: 340px;
     gap: 35px;
+    margin-left: 80px;
 }
 
 .section_1_title{
     width: 1340px;
     height: 53px;
-    gap:8px;
+}
+
+.title_1{
+    padding-bottom: 15px;
 }
 .research_bar{
     display: flex;
-    width: 377px;
+    width: 376px;
     height: 49px;
     border-radius: 15px;
     border: 1px solid #F2F2F2;
@@ -125,28 +137,28 @@ ul {
     border-radius: 0px 15px 15px 0px;
     border: 1px solid #0065FC;
     padding: 15px 16px 15px 16px; 
+    margin-left: 10px;
     gap: 10px;
 }
 
 .filtres_bar {
     display: flex;
     align-items: center;
-    width: 758px;
     height: 50px;
     gap: 15px;
 }
 
 .filtres_button{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 173px;
+    align-items: center;
     height: 50px;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
     padding: 4px 19px 4px 19px;
     gap: 10px;
 }
+
 
 .filtres_icon{
     color: #0065FC;
@@ -161,6 +173,9 @@ ul {
     border: none;
 }
 
+.filtres_button:hover {
+    background-color: #DEEBFF;
+}
 .section_1_title_2 {
     display: flex;
     align-items: center;
@@ -173,17 +188,21 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 27px;
     border: 1px solid #D9D9D9;
     border-radius: 25px ;
     
 }
+
+/*Css section Hebergement*/
 .section_2 {
     display: flex;
     width: 1340px;
     height: 614px;
     gap: 40px;
+    margin-left: 80px;
+    margin-bottom: 80px;
 }
 
 .section_left {
@@ -203,6 +222,8 @@ ul {
     flex-direction: row;
     width: 811px;
     height: 207.25px;
+    padding-right: 30px;
+    margin-bottom: 20px;
     gap: 30px;
 }
 .img_hebergement_left {
@@ -230,15 +251,15 @@ ul {
 .hotel_note {
     
     height: 13.25px;
-    margin: 0px 0px 0px 10px;
+    
 }
 .card_left{
     display: flex;
     flex-direction: column;
     background: white;
     border: 5px solid white;
-    width: 250.33px;
-    height: 207.25px;
+    width: 33.86%;
+    height: 100%;
     border-radius: 20px;
     filter: drop-shadow( 0px 3px 5px #0000001A);    
     gap: 4px;   
@@ -251,13 +272,15 @@ ul {
     background-color: #f2f2f2 ;
     width: 429px;
     height: 614px;
-    border-radius: 15px;
     padding: 30px;
+    border-radius: 15px;
     gap: 30px; 
 }
 .section_right_title {
-   width: 369px;
-   height: 26px;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    justify-content: space-between;
 }
 .card_populaires {
     display: flex;
@@ -271,15 +294,15 @@ ul {
     display: flex;
     background: white;
     border: 5px solid white;
-    width: 369px;
-    height: 146px;
+    width: 100%;
+    height: 29.31%;
     border-radius: 20px ; 
     filter: drop-shadow( 0px 3px 5px #0000001A);  
 }
 
 .img_hebergement_right{
-    width: 123px;
-    height: 146px;
+    width: 33%; 
+    height: 100% ;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -291,17 +314,16 @@ ul {
     padding: 10px 5px 5px 15px;
     gap: 24px;
 }
-.note {
-    padding: 60px 0px 0px 10px;
-}
-
-.note_spe {
-    padding: 40px 0px 0px 10px;
-}
 
 .fas{
     color: #0065FC;
 }
+.far{
+    color: #F2F2F2; 
+}
+
+/*Css section Activites*/
+
 .section_3{
     display: flex;
     flex-direction: column;
@@ -309,6 +331,7 @@ ul {
     height: 559.02px;
     padding: 30px;
     gap: 30px; 
+    margin-left: 80px;
 }
 .ligne_activites{
     display: flex;
@@ -329,15 +352,17 @@ ul {
 
 .img_activites{
     width: 100% ;
-    height: 100%;
+    height: 100% ;
     border-radius: 20px 20px 0px 0px;
  }
 
  .card_activites_title {
+    display: flex;
+    align-items: center;
     width: 297.5px;
     height:  59px;
-    padding: 20px, 19px, 20px, 19px;
     gap: 10px;
+    margin-left: 20px;
     
 
  }
@@ -354,6 +379,8 @@ ul {
     justify-content: space-between;
     width: 1340px;
     height:163px ;
+    margin-left: 80px;
+    margin-bottom: 0;
 }
 
 .footer_list {
