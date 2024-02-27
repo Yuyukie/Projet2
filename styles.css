@@ -1,3 +1,19 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
+.header_contenair {
+    display: flex;
+
+}
+
+.main_contenair {
+    display: flex;
+}
+
+.section {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+}
