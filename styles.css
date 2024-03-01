@@ -10,7 +10,7 @@ body {
     max-width: 1440px ;
     max-height: 1889px;
     padding: 0px 50px 0px 50px;
-    gap: 35px;
+  
 }
 
 h1{
@@ -62,7 +62,7 @@ h5{
     height: 35px; 
     padding: 0px 50px 0px 50px;
     gap: 68px;
-    margin-right: 20px;
+    
 }
 
 ul {
@@ -86,8 +86,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;   /* 1440 px */
-    height: 91.2%; /* 1722px */
+    width: 1440px;   
+    height: 1722px; 
     padding: 0px, 50px, 0px, 50px;
     gap: 30px;
     
@@ -97,16 +97,16 @@ ul {
 .section_1{
     display: flex;
     flex-direction: column;
-    width: 93%;  /* 1340px */
-    height: 16.3%; /* 281px */
+    width: 1340px;  
+    height: 281px; 
     gap: 35px;
     
 }
 
 .section_1_title{
     box-sizing: border-box;
-    width: 1340px; /* 1340px */
-    height: 53px; /* 53px */
+    width: 1340px; 
+    height: 53px; 
 }
 
 .research_bar{
@@ -121,8 +121,8 @@ ul {
 .icon_map{
     display: flex;
     background-color:#F2F2F2;
-    width: 50px; /* 50px */
-    height: 49px; /* 49px */
+    width: 50px; 
+    height: 49px; 
     border-radius: 15px 0px 0px 15px;
     border: 1px solid #F2F2F2;
     justify-content: center;
@@ -131,14 +131,13 @@ ul {
 }
 
 .form {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+    display: flex;   
 }
 .saisie{
     border: none;
     width: 178px;
-    height: 47px;
+    height: 44px;
+    margin-top: 2px;
 }
 
 .research_button {
@@ -202,19 +201,21 @@ ul {
 .section_1_title_2 {
     display: flex;
     align-items: center;
-    width: 100%; /* 1340px */
+    width: 1340px;
     height: 24px;
     gap: 10px;
 }
-
+.section_1_title_2 h4{
+    margin: 0px;
+}
 
 /*Css section_2*/
 .section_2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 93%; /* 1340px ou 93% */
-    height: 35.7%; /* 614px ou 35.7%*/
+    width: 1340px; 
+    height: 614px;
     gap: 40px;
     
 }
@@ -223,8 +224,9 @@ ul {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2 ;
-    width: 65% ; /* 871px ou 65%*/ 
-    height: 100% ; /* 614px */
+    box-sizing: border-box;
+    width: 871px ;  
+    height: 614px ;
     padding: 30px;
     border-radius:15px ;
     gap: 30px;
@@ -236,9 +238,8 @@ ul {
 
 .ligne{
     display: flex;
-    box-sizing: border-box;
     width: 100%;
-    height: 33.75%;/* 207.25px */
+    height: 207.25px;
     gap: 30px;
 }
 .card_left{
@@ -256,14 +257,14 @@ ul {
 
 .img_hebergement_left {
     width: 100%;
-    height: 124px;
+    height: 59.8%;
     border-radius: 20px 20px 0px 0px;
 }
 .card_container_left{
-    width: 250.33px;
-    height: 64.25px;
     display: flex;
     flex-direction: column; 
+    width: 100%;
+    height: 31%;
     padding-left: 10px;
     gap: 8px ;
 }
@@ -291,8 +292,9 @@ ul {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2 ;
-    width: 32%; /* 429px ou 32% */
-    height: 100%; /* 614px */
+    box-sizing: border-box;
+    width: 429px;
+    height: 614px; 
     padding: 30px;
     border-radius: 15px;
     gap: 30px; 
@@ -310,7 +312,7 @@ ul {
 .card_populaires {
     display: flex;
     flex-direction: column;
-    width: 369px; 
+    width: 100%; 
     height: 498px;
     gap: 30px;
 }
@@ -327,7 +329,7 @@ ul {
 
 .img_hebergement_right{
     
-    width: 33.3%; /* 123px */
+    width: 33.3%; 
     height: 100% ; 
     border-radius: 20px 0px 0px 20px;
 }
@@ -335,8 +337,8 @@ ul {
 .card_container_right{  
     display: flex;
     flex-direction: column;
-    width: 246px;
-    height: 136px;
+    width: 66.6%;
+    height: 93%;
     padding: 10px 5px 5px 15px;
     gap: 24px;
 }
@@ -357,6 +359,7 @@ ul {
 .section_3{
     display: flex;
     flex-direction: column;
+    
     width: 1340px;
     height: 559px; 
     padding: 30px;
@@ -366,11 +369,12 @@ ul {
     margin: 0px;
     padding-left: 30px;
 }
+
 .ligne_activites{
     display: flex;
     flex-direction: row;
-    width: 1280px;
-    height: 439px; 
+    width: 95.5%; /* 1280px */
+    height: 78.5%; /* 439px */
     gap: 30px;    
     padding: 30px;
 }
@@ -378,27 +382,26 @@ ul {
     display: flex;
     flex-direction: column;
     background: white;
-    width: 297.5px;
-    height: 439px;
+    width: 23.25%; /* 297.5px */
+    height: 100%; /* 439px */
     border-radius: 20px;
     filter: drop-shadow( 0px 3px 5px #0000001A);
 }
 
 .img_activites{
     width: 100% ;
-    height: 100% ; 
+    height: 100% ;
     border-radius: 20px 20px 0px 0px;
+    
  }
 
  .card_activites_title {
-    display: flex;
-    align-items: center;
-    width: 297.5px;
-    height:  59px;
+    margin: 0px;
+    width: 100%;
+    height: 59px;
+    padding: 20px 19px 20px 19px ;
+    border-radius: 0px 0px 20px 20px;
     gap: 10px;
-    margin-left: 20px;
-    
-
  }
 
 /*Css footer*/
@@ -425,15 +428,68 @@ ul {
 }
 
 
-/*Css Responsive tablette
+/*Css Responsive tablette */
 
 @media screen and (min-width: 769px ) and (max-width: 1023px){
 
+    .header_contenair{
+        width: 1024px;
+    }
+
+    .main_contenair {
+        display: flex;
+        flex-direction: column;
+        width: 1024px;
+    }
+    .section_1 {
+        width: 924px ;
+        height: 322px;
+    }
     .section_2 {
         display: flex;
         flex-direction: column;
+        width: 924px ;
+        height: 913px;
     }
-       
-    
+    .section_left {
+        width: 924px;
+        height: 611.5px;
+    }
+    .ligne{
+        display: flex;
+        justify-content: center;
+    }
+    .section_right {
+        width: 924px;
+        height: 252px;
+    }
+    .card_populaires{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .section_3 {
+        width: 924px;
+        height: 390px;
+    }
+
+    .card_activites{
+        width: 193.5px;
+        height: 270px;
+    }
+
+    .img_activites{
+        width: 193.5px;
+        height: 100%;
+    }
+
+    .card_activites_title {
+        height: 70px;
+    }
+
+    .footer_container{
+        width: 924px;
+        height: 163px;
+    }
     
 }
