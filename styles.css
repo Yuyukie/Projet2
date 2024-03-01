@@ -152,7 +152,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-   
     width: 173px; 
     height: 50px; 
     border-radius: 25px;
@@ -171,13 +170,14 @@ ul {
 }
 
 .filter_button_title{
-    width: 97px;
+    width: 103px;
     height: 100%; /* 50 px */
+    font-size: 17px;
     background: none;
     border: none;
 }
 
-.filtres_button:hover {
+.filter_button:hover {
     background-color: #DEEBFF;
 }
 .section_1_title_2 {
