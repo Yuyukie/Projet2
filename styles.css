@@ -95,8 +95,7 @@ ul {
 .section_1{
     display: flex;
     flex-direction: column;
-    width: 100%;  
-    height: 281px; 
+    width: 100%;   
     gap: 35px; 
 }
 
@@ -108,7 +107,7 @@ ul {
 
 .research_bar{
     display: flex;
-    width:  375px;
+    width:  377px;
     height:  49px; 
     border-radius: 15px;
     border: 1px solid #F2F2F2;
@@ -156,7 +155,7 @@ ul {
 
 .filter{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -225,12 +224,14 @@ ul {
 }
 
 /*Css section_2*/
+
 .section_2 {
     display: flex;
     width: 100%;  
-    height: 614px;
     gap: 40px;
 }
+
+/*Css section_left*/
 
 .section_left {
     display: flex;
@@ -304,6 +305,8 @@ ul {
 .star_empty{
     color: #F2F2F2; 
 }
+
+/*Css section_right*/
 
 .section_right {
     display: flex;
@@ -384,7 +387,6 @@ ul {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 560px;
     padding: 30px;
     gap: 30px; 
 }
@@ -498,10 +500,7 @@ ul {
     }
 
     .section_3 {
-        height: auto;
-    }
-
-    .ligne_activites {
+        width: 100%;
         height: auto;
     }
 
@@ -511,9 +510,11 @@ ul {
     }
 
     .img_activites {
-        height: auto;
+        height: 170;
     }
-
+    .card_activites_title {
+        height: 50px;
+    }
     .footer_container{
         width: 93%;
     }
@@ -536,6 +537,7 @@ ul {
 
     .logo{
         justify-content: center;
+        padding: 30px 50px 0px 50px;
     }
 
     .nav_bar{
@@ -546,14 +548,23 @@ ul {
     }
 
     .nav_link {
-        width: 187.5px;
         justify-content: space-between;
         align-items: center;
+        width: 187.5px;
+        padding: 0px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .nav_link:hover {
+        border-bottom: 2px solid #0065FC;
+        text-decoration: none;
     }
 
     .main_contenair{
         flex-direction: column;
     }
+
+/*Css section_1*/
 
     .section_1 {
         flex-direction: column;
@@ -564,6 +575,10 @@ ul {
     .section_1_title {
         width: 100%;
         height: auto;
+    }
+
+    .section_1_title, h4 {
+        margin: 5px 0px 0px 0px;
     }
 
     .research_bar{
@@ -586,6 +601,7 @@ ul {
         height: 49px; 
         border-radius: 15px;
         border: 1px solid #0065FC;
+        filter: drop-shadow() ( 5px 5px 20px #0000000a); 
     }
 
     .icon_loupe {
@@ -629,7 +645,9 @@ ul {
         width: 100%;
         height: auto;
     }
-    
+
+/*Css section_2*/
+
     .section_2 {
         flex-direction: column;
         align-items: center;
@@ -662,6 +680,7 @@ ul {
     .section_right{   
         width: 100%; 
         height: auto;
+        border-radius: 0px;
         order: 1;
     }
 
@@ -672,6 +691,8 @@ ul {
     .card_right {
         width: 100%;
     }
+
+/*Css section_3*/
 
     .section_3{
         height: auto;
@@ -689,6 +710,7 @@ ul {
 
     .img_activites {
         height: 141px;
+        object-fit: cover;
     }
 
     .footer_container {
