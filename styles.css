@@ -36,22 +36,22 @@ h5{
 .header_contenair {
     display: flex;
     justify-content: space-between;
-    width: 93%; /*1340px*/
+    width: 100%; 
 }
 
 .logo {
     display: flex; 
     justify-content: left;
     align-items: center;
-    width: 11.2%; /*161.1px*/
-    height: 79px; 
+    height: 79px;  
+    padding: 30px 50px 30px 50px;
     gap: 10px; 
 }
 
 .logo_booki {
     width: 61.1px; 
     height: 19px; 
-    padding: 30px 50px 30px 50px;
+    
 }
 
 .nav_bar {
@@ -59,7 +59,6 @@ h5{
     justify-content: right;
     width: 344px; 
     height: 35px; 
-    padding: 0px 50px 0px 50px;
     gap: 68px;
     
 }
@@ -85,7 +84,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 93%;  /*1440px*/    
+    width: 100%;   
     padding: 0px, 50px, 0px, 50px;
     gap: 30px;
     
@@ -95,7 +94,7 @@ ul {
 .section_1{
     display: flex;
     flex-direction: column;
-    width: 93%;  /*1340px*/
+    width: 100%;  
     height: 281px; 
     gap: 35px;
     
@@ -224,7 +223,7 @@ ul {
 /*Css section_2*/
 .section_2 {
     display: flex;
-    width: 93%; /*1340px*/ 
+    width: 100%;  
     height: 614px;
     gap: 40px;
     
@@ -246,7 +245,7 @@ ul {
     margin: 0px;
 }
 
-.ligne{
+.ligne_hebergement{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -320,7 +319,7 @@ ul {
     color: #0065FC;
 }
 
-.card_populaires {
+.ligne_populaires {
     display: flex;
     flex-direction: column;
     width: 100%; /*429px*/
@@ -348,21 +347,24 @@ ul {
 .card_container_right{  
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 66.6%;
-    height: 93%;
     padding: 10px 5px 5px 15px;
     gap: 24px;
 }
 
-.hotel_name_pop{
-    margin: 0px;
+.hotel_infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.hotel_price_pop {
-    margin: -20px 0px 0px 0px;
+.hotel_infos h4,p {
+    margin:0px;
 }
 .note_pop {
     display: flex;
-    margin-top: 20px;
+    box-sizing: content-box;
+    justify-content: baseline;
 }
 
 /*Css section_3 */
@@ -370,7 +372,7 @@ ul {
 .section_3{
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 100%;
     height: 560px;
     padding: 30px;
     gap: 30px; 
@@ -415,7 +417,7 @@ ul {
     display: flex;
     background-color: #F2F2F2;
     box-sizing: border-box;
-    width: 93% ; /*1340px*/ 
+    width: 100%;
 }
 
 .footer_list {
@@ -423,7 +425,6 @@ ul {
     flex-direction: column;
     align-items: left;
     width: 33.3% ; /*447px*/
-    height: 163px ;
     padding: 20px; 
     gap: 15px ;
 }
@@ -437,13 +438,22 @@ ul {
 
 @media screen and (min-width: 769px ) and (max-width: 1023px){
     body{
+        width: 1023;
+        
+    }
+    .header_contenair {
         width: 100%;
-        padding: 0;
+    }
+    .logo {
+        width: 161PX;
     }
     .main_contenair{
         flex-direction: column;
+        width: 100%;
         height: auto;
+        padding: 0px 50px 0px 50px;
     }
+
     .section_2 {
         flex-direction: column;
         align-items: center;
@@ -451,29 +461,36 @@ ul {
     }
  
     .section_left{
-        width: 93%;
+        width: 100%;
         height: auto;
     }
     .section_right{
-        width: 93%; 
+        width: 100%; 
         height: auto;
     }
     .card_left{
         width: 100%;
     }
 
-    .card_populaires{
+    .ligne_populaires{
         flex-direction: row;
         height: auto; 
     }
     .card_right {
         width: 270px;
     }
+    .section_3 {
+        height: auto;
+    }
     .ligne_activites {
-        align-items: center;
+        height: auto;
     }
     .card_activites{
-       height: 270px;
+        width: 100%;
+        height: 270px;
+    }
+    .img_activites {
+        height: auto;
     }
 
     .footer_container{
@@ -491,6 +508,7 @@ ul {
         padding: 0;
     }
     .header_contenair{
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -498,7 +516,15 @@ ul {
         justify-content: center;
     }
     .nav_bar{
-        justify-content: center;
+        width: 375px;
+        gap: 15px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav_link {
+        width: 187.5px;
+        justify-content: space-between;
+        align-items: center;
     }
     .main_contenair{
         flex-direction: column;
@@ -560,46 +586,51 @@ ul {
         padding: 0px;
     }
     
-    .ligne{
+    .ligne_hebergement{
         flex-direction: column; 
+        align-items: center;
         height: 100%;
     }
     .card_left{
-        width: 100%;
+        width: 93%;
         height: auto;
     }
     .img_hebergement_left{
         width: 100%;
 
     }
-    .section_right{
-        background-color: white;
-        width: 93%; 
+    .section_right{   
+        width: 100%; 
         height: auto;
         order: 1;
-        padding: 0px;
     }
 
-    .card_populaires{
+    .ligne_populaires{
         flex-direction: column;
-        width: 100%;
     }
 
     .card_right {
         width: 100%;
     }
+    .section_3{
+        height: auto;
+    }
     .ligne_activites {
         flex-direction: column;
-        height: 100%;
+        height: auto;
     }
     .card_activites{
         width: 100%;
-       height: 270px;
+       height: 200px;
     }
-
-    .footer_container{
-        width: 100%;
+    .img_activites {
+        height: 141px;
+    }
+    .footer_container {
         flex-direction: column;
+
     }
-s
+    .footer_list{
+        width: 100%;
+    }
 }
