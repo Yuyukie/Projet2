@@ -107,7 +107,7 @@ ul {
 
 .research_bar{
     display: flex;
-    width:  377px;
+    width:  375px;
     height:  49px; 
     border-radius: 15px;
     border: 1px solid #F2F2F2;
@@ -155,7 +155,6 @@ ul {
 
 .filter{
     display: flex;
-    flex-direction: column;
     gap: 15px;
 }
 
@@ -412,6 +411,16 @@ ul {
     filter: drop-shadow( 0px 3px 5px #0000001A);
 }
 
+.card_activites_0 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 23.25%; /* 297.5px */
+    height: 439px;
+    border-radius: 20px;
+    filter: drop-shadow( 0px 3px 5px #0000001A);
+}
+
 .img_activites{
     width: 100% ;
     height: 380px;
@@ -470,6 +479,9 @@ ul {
         padding: 0px 50px 0px 50px;
     }
 
+    .filter{
+        flex-direction: column;
+    }
     .section_2 {
         flex-direction: column;
         align-items: center;
@@ -508,7 +520,7 @@ ul {
         width: 100%;
         height: 270px;
     }
-
+    
     .img_activites {
         height: 170;
     }
@@ -516,7 +528,7 @@ ul {
         height: 50px;
     }
     .footer_container{
-        width: 93%;
+        width: 100%;
     }
 }
 
@@ -537,7 +549,7 @@ ul {
 
     .logo{
         justify-content: center;
-        padding: 30px 50px 0px 50px;
+        padding: 30px 0px 0px 50px;
     }
 
     .nav_bar{
@@ -580,9 +592,14 @@ ul {
     .section_1_title, h4 {
         margin: 5px 0px 0px 0px;
     }
-
+    .icon_map {
+        width: 50px;
+    }
+    .saisie{
+        width: 157px;
+    }
     .research_bar{
-        width: 100%;
+        width: 377px;
         height: auto;
     }
 
@@ -590,6 +607,7 @@ ul {
         visibility: hidden;
         width: 0.001px;
         height: 0.001px;
+        padding-left: 65px;
     }
 
     .loupe{
@@ -602,6 +620,7 @@ ul {
         border-radius: 15px;
         border: 1px solid #0065FC;
         filter: drop-shadow() ( 5px 5px 20px #0000000a); 
+        margin-left: 30px;
     }
 
     .icon_loupe {
