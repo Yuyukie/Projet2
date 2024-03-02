@@ -72,17 +72,14 @@ h5{
     gap: 68px;   
 }
 
-ul {
-    list-style-type: none;
-}
-
-.nav_link {
+.nav_bar a {
     text-decoration: none;
     background: none;
     border: none;
+    padding-top: 10px;
 }
 
-.nav_link:hover {
+.nav_bar a:hover {
     text-decoration: overline #0065FC;
     color: #0065FC;
 }
