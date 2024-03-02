@@ -34,6 +34,14 @@ h5{
     font-weight: 400;
 }
 
+/*permet de rendre toutes les cards cliquable*/
+.card_click {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 
 /*Css header*/
 .header_contenair {
@@ -259,6 +267,7 @@ ul {
 .card_left{
     display: flex;
     flex-direction: column;
+    position: relative;
     background: white;
     box-sizing: border-box;
     width: 250.3px; /*250.3px*/
@@ -404,6 +413,7 @@ ul {
 .card_activites{
     display: flex;
     flex-direction: column;
+    position: relative;
     background: white;
     width: 23.25%; /* 297.5px */
     height: 439px;
