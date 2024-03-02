@@ -539,7 +539,30 @@ ul {
         height: auto;
     }
     .research_bar{
+        width: 100%;
         height: auto;
+    }
+    .research_button{
+        visibility: hidden;
+        width: 0.001px;
+        height: 0.001px;
+    }
+    .loupe{
+        display: flex;
+        background-color:#0065FC;    
+        justify-content: center;
+        align-items:  center;
+        width: 55px; 
+        height: 49px; 
+        border-radius: 15px;
+        border: 1px solid #0065FC;
+    }
+
+    .icon_loupe {
+        visibility: visible;
+        width: 17px;
+        height: 17px;
+        color: white;
     }
     .filter{
         flex-direction: column;
