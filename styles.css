@@ -1,13 +1,14 @@
 /*Css Général*/
 * {
     font-family: 'Raleway', sans-serif;
-}
+}  
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1440px ;
+    min-width: 320px;
     margin: 0px;
     padding: 0px 50px 0px 50px;
 }
@@ -66,22 +67,33 @@ h5{
 
 .nav_bar {
     display: flex;
-    justify-content: right;
+    flex-direction: column;
     width: 344px; 
-    height: 35px; 
-    gap: 68px;   
+    height: 35px;
+    gap: 68px;  
 }
 
-.nav_bar a {
+.nav_link {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    height: 35px;   
+}
+.nav_link a {
     text-decoration: none;
-    background: none;
-    border: none;
-    padding-top: 10px;
 }
-
-.nav_bar a:hover {
+.nav_link a:hover {
     text-decoration: overline #0065FC;
     color: #0065FC;
+}
+.nav_link_bar {
+    display: none;
+    width: 100%;
+}
+
+.sub_bar {
+    border-bottom: 1px solid #F2F2F2;
+    width: 50%;
 }
 
 /*Css Main*/
@@ -112,6 +124,8 @@ h5{
 
 .research_bar{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width:  375px;
     height:  49px; 
     border-radius: 15px;
@@ -131,30 +145,30 @@ h5{
 }
 
 .form {
-    display: flex;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width: 100%;
+    height: 49px;
+
 }
 
 .saisie{
-    border: none;
-    width: 178px;
-    height: 44px;
-    margin-top: 2px;
+border-style: none;
 }
 
 .icon_loupe {
-    visibility: hidden;
-    width: 0.001px;
-    height: 0.001px;
+    display: none;
 }
 
 .research_button {
     background-color:#0065FC ;
+    text-decoration: none;  
     color: white;
-    width: 132px;
+    width: auto;
     height: 49px; 
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid #0065FC;
-    padding: 15px 16px 15px 16px; 
+    border: 1px solid #0065FC; 
     gap: 10px;
 }
 
@@ -270,7 +284,7 @@ h5{
     width: 250.3px; /*250.3px*/
     height: 207.25px; /*207.25px*/
     border-radius: 20px;
-    filter: drop-shadow( 0px 3px 5px #0000001A); 
+    box-shadow: 0px 3px 15px 0px #0000001A;
     border: 5px solid white;   
     gap: 4px;   
 }
@@ -357,7 +371,7 @@ h5{
     height: 146px; 
     border-radius: 20px ;  
     border: 5px solid white;
-    filter: drop-shadow( 0px 3px 5px #0000001A);  
+    box-shadow: 0px 3px 15px 0px #0000001A; 
 }
 .img_container_right {
      width: 33.3%; 
@@ -425,7 +439,7 @@ h5{
     width: 23.25%; /* 297.5px */
     height: 439px;
     border-radius: 20px;
-    filter: drop-shadow( 0px 3px 5px #0000001A);
+    box-shadow: 0px 3px 15px 0px #0000001A;
 }
 .img_container_activity {
     width: 100% ;
@@ -576,29 +590,42 @@ h5{
     }
 
     .nav_bar{
-        width: 375px;
-        gap: 15px;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .nav_bar a {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
-        border-bottom: 2px solid #F2F2F2 ;
+        gap: 15px;
     }
 
-    .nav_bar a:hover {
-        text-decoration: underline #0065FC; 
-        border-bottom: 2px solid #0065FC;
+    .nav_link a {
         text-decoration: none;
     }
+
+    .nav_link_bar {
+        display: flex;
+        width: 100%;
+    }
+    
+    .sub_bar {
+        border-bottom: 1px solid #F2F2F2;
+        width: 50%;
+    }
+
+    .nav_link a:hover {
+        text-decoration: none;  
+        color: #0065FC;
+    }
+
+    .nav_bar :hover{
+        color: #0065FC;
+    }
+
     .main_contenair{
         flex-direction: column;
     }
 
 /*Css section_1*/
+
 
     .section_1 {
         flex-direction: column;
@@ -614,25 +641,23 @@ h5{
     .section_1_title, h4 {
         margin: 5px 0px 0px 0px;
     }
+
+    .research_bar{
+        width: 100%;
+        height: auto;
+    }    
     .icon_map {
         width: 50px;
     }
+
     .saisie{
         width: 157px;
     }
-    .research_bar{
-        width: 377px;
-        height: auto;
-    }
-
     .research_button{
-        visibility: hidden;
-        width: 0.001px;
-        height: 0.001px;
-        padding-left: 65px;
+       display: none;
     }
 
-    .loupe{
+    .icon_loupe{
         display: flex;
         background-color:#0065FC;    
         justify-content: center;
@@ -640,16 +665,17 @@ h5{
         width: 55px; 
         height: 49px; 
         border-radius: 15px;
-        border: 1px solid #0065FC;
-        filter: drop-shadow() ( 5px 5px 20px #0000000a); 
-        margin-left: 30px;
+        border: 1px solid #0065FC;  
+        box-shadow: 0px 4px 4px 0px #00000040;
+
     }
 
-    .icon_loupe {
-        visibility: visible;
+    .loupe {
+        display: flex;
         width: 17px;
         height: 17px;
         color: white;
+      
     }
 
     .filter{
