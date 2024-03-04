@@ -66,12 +66,12 @@ h5{
     width: 344px; 
     height: 35px;
     gap: 68px;  
-    padding: 0px, 50px, 0px, 50px;
+    padding: 0px 50px 0px 50px;
 }
 
 .nav_link {
     display: flex;
-    justify-content: space-between; 
+    justify-content: right; 
     width: 100%;
     height: 35px;   
 }
@@ -79,10 +79,10 @@ h5{
 .nav_link a {
     text-decoration: none;
 }
-.nav_link :hover {
+
+.nav_link a:hover {
     display: flex;
-    
-    border-top: 2px solid #0065FC;
+    text-decoration: overline;
     color: #0065FC;
 }
 /*Css Main*/
@@ -92,8 +92,7 @@ h5{
     flex-direction: column;
     align-items: center;
     width: 100%;  
-    height: 1722px;
-    padding: 0px, 50px, 0px, 50px;
+    padding: 0px 50px 0px 50px;
     gap: 30px;  
 }
 
@@ -104,7 +103,7 @@ h5{
     flex-direction: column;
     width: 93.1%;  /*1340px*/
     height: 281px;
-    gap: 35px; 
+    gap: 25px; 
 }
 
 .section_1_title{
@@ -122,6 +121,7 @@ h5{
     border-radius: 15px;
     border: 1px solid #F2F2F2;
     gap: 24px ;
+    margin: 10px;
 }
 
 .icon_map{
@@ -483,7 +483,7 @@ h5{
 
 @media screen and (min-width: 769px ) and (max-width: 1023px){
     body{
-        width: 1023; 
+        width: 1023px; 
     }
 
     .header_contenair {
@@ -491,7 +491,7 @@ h5{
     }
 
     .logo {
-        width: 161PX;
+        width: 161px;
     }
 
     .main_contenair{
@@ -587,30 +587,26 @@ h5{
 
     .nav_bar{
         display: flex;
-        justify-content: space-between;
-        width: ;
-        gap: 15px;
+        gap: 0px;
+        
     }
 
     .nav_link {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-
-    .nav_bar :hover{
-        border-bottom: 2px solid #0065FC;
-
-    }
-    .nav_link a {
+    
+    .nav_bar a:hover {
         text-decoration: none;
     }
-    .nav_link a:hover { 
-        text-decoration: none; 
-        color: #0065FC;
+
+    .nav_bar a {
+        border-bottom: 2px solid #F2F2F2;
     }
 
-
+    .nav_bar a:hover {
+        border-bottom: 2px solid #0065FC;
+    }
 
     .main_contenair{
         flex-direction: column;
@@ -637,9 +633,11 @@ h5{
     .research_bar{
         width: 335px;
     }
+
     .saisie{
         width: 157px;
     }
+
     .research_button{
        display: none;
     }
@@ -764,6 +762,7 @@ h5{
         height: 141px;
         border-radius: 20px 20px 0px 0px;  
     }
+
     .card_activity_title {
         max-height: 70px;
         padding: 10px 19px 20px 19px;
@@ -771,7 +770,7 @@ h5{
 
     .footer_container {
         flex-direction: column;
-
+        height: auto;
     }
 
     .footer_list{
