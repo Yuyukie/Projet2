@@ -7,10 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1440px ;
-    min-width: 320px;
+    max-width: 1440px;
     margin: 0px;
-    padding: 0px 50px 0px 50px;
+
 }
 
 h1{
@@ -49,28 +48,25 @@ h5{
     display: flex;
     justify-content: space-between;
     width: 100%; 
-}
-
-.logo {
-    display: flex; 
-    justify-content: left;
-    align-items: center;
-    height: 79px;  
-    padding: 30px 50px 30px 0px;
-    gap: 10px; 
+    height: 79px;
 }
 
 .logo_booki {
-    width: 61.1px; 
+    display: flex; 
+    justify-content: left;
+    align-items: center;
+    width: 61.1px;
     height: 19px;  
+    padding: 30px 50px 30px 50px;
+    gap: 10px; 
 }
 
 .nav_bar {
     display: flex;
-    flex-direction: column;
     width: 344px; 
     height: 35px;
     gap: 68px;  
+    padding: 0px, 50px, 0px, 50px;
 }
 
 .nav_link {
@@ -79,30 +75,24 @@ h5{
     width: 100%;
     height: 35px;   
 }
+
 .nav_link a {
     text-decoration: none;
 }
-.nav_link a:hover {
-    text-decoration: overline #0065FC;
+.nav_link :hover {
+    display: flex;
+    
+    border-top: 2px solid #0065FC;
     color: #0065FC;
 }
-.nav_link_bar {
-    display: none;
-    width: 100%;
-}
-
-.sub_bar {
-    border-bottom: 1px solid #F2F2F2;
-    width: 50%;
-}
-
 /*Css Main*/
 
 .main_contenair{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;   
+    width: 100%;  
+    height: 1722px;
     padding: 0px, 50px, 0px, 50px;
     gap: 30px;  
 }
@@ -112,13 +102,14 @@ h5{
 .section_1{
     display: flex;
     flex-direction: column;
-    width: 100%;   
+    width: 93.1%;  /*1340px*/
+    height: 281px;
     gap: 35px; 
 }
 
 .section_1_title{
     box-sizing: border-box;
-    width: 93%; /*1340px*/
+    width: 100%; 
     height: 53px; 
 }
 
@@ -148,13 +139,14 @@ h5{
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    width: 100%;
+    width: 325px;
     height: 49px;
 
 }
 
 .saisie{
-border-style: none;
+    border-style: none;
+    width: 175px ;
 }
 
 .icon_loupe {
@@ -165,7 +157,7 @@ border-style: none;
     background-color:#0065FC ;
     text-decoration: none;  
     color: white;
-    width: auto;
+    width: 132px;
     height: 49px; 
     border-radius: 0px 15px 15px 0px;
     border: 1px solid #0065FC; 
@@ -245,7 +237,8 @@ border-style: none;
 
 .section_2 {
     display: flex;
-    width: 100%;  
+    width: 93.1%;  
+    height: 614px;
     gap: 40px;
 }
 
@@ -415,7 +408,8 @@ border-style: none;
 .section_3{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 93.1%;
+    height: 559px;
     padding: 30px;
     gap: 30px; 
 }
@@ -467,7 +461,8 @@ border-style: none;
     display: flex;
     background-color: #F2F2F2;
     box-sizing: border-box;
-    width: 100%;
+    width: 93.1%;
+    height: 163px;
 }
 
 .footer_list {
@@ -579,46 +574,43 @@ border-style: none;
     }
 
     .header_contenair{
-        width: 100%;
         flex-direction: column;
-        align-items: center;
+        align-items: center;  
+        width: 100%;
+        height: 114px;
     }
 
-    .logo{
+    .logo_booki{
         justify-content: center;
         padding: 30px;
     }
 
     .nav_bar{
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: ;
         gap: 15px;
     }
 
-    .nav_link a {
-        text-decoration: none;
-    }
-
-    .nav_link_bar {
+    .nav_link {
         display: flex;
-        width: 100%;
-    }
-    
-    .sub_bar {
-        border-bottom: 1px solid #F2F2F2;
-        width: 50%;
-    }
-
-    .nav_link a:hover {
-        text-decoration: none;  
-        color: #0065FC;
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav_bar :hover{
+        border-bottom: 2px solid #0065FC;
+
+    }
+    .nav_link a {
+        text-decoration: none;
+    }
+    .nav_link a:hover { 
+        text-decoration: none; 
         color: #0065FC;
     }
+
+
 
     .main_contenair{
         flex-direction: column;
@@ -643,13 +635,8 @@ border-style: none;
     }
 
     .research_bar{
-        width: 100%;
-        height: auto;
-    }    
-    .icon_map {
-        width: 50px;
+        width: 335px;
     }
-
     .saisie{
         width: 157px;
     }
