@@ -606,6 +606,7 @@ h5{
 
     .research_bar{
         justify-content: center;
+        width: 100%;
     }
 
     .input_field{
