@@ -13,24 +13,24 @@ body {
 }
 
 h1{
-    size: 22px;
+    resize: 22px;
 }
 
 h2{
-    size: 18px;
+    resize: 18px;
 }
 
 h3{
-    size: 17px;
+    resize: 17px;
 }
 
 h4{
-    size: 16px;
+    resize: 16px;
     font-weight: 400;
 }
 
 h5{
-    size: 15px;
+    resize: 15px;
     font-weight: 400;
 }
 
@@ -391,7 +391,6 @@ h5{
 .note_pop {
     display: flex;
     box-sizing: content-box;
-    justify-content: baseline;
 }
 
 /*Css section_3 */
@@ -439,7 +438,7 @@ h5{
  }
 
  .card_activity_title {
-    height: 59;
+    height: 59px;
     margin: 0px;
     padding: 10px ;
     border-radius: 0px 0px 20px 20px;
@@ -457,7 +456,6 @@ h5{
 .footer_list {
     display: flex;
     flex-direction: column;
-    align-items: left;
     width: 33.3% ; /*447px*/
     padding: 20px; 
     gap: 15px ;
