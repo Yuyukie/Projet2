@@ -470,6 +470,15 @@ h5{
     margin: 0px;
 }
 
+/*Css Responsive large Desktop */
+
+@media screen and (min-width: 1141px ) {
+html{
+    display: flex;
+    justify-content: center;
+}
+}
+
 
 /*Css Responsive tablette */
 
