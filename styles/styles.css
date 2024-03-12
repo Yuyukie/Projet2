@@ -8,20 +8,21 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
+    height: auto;
     margin: 0px;
 
 }
 
 h1{
-    font-size: 22px;
+    font-size: 26px;
 }
 
 h2{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 h3{
-    font-size: 17px;
+    font-size: 18px;
 }
 
 h4{
@@ -30,7 +31,7 @@ h4{
 }
 
 h5{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -101,14 +102,19 @@ h5{
     display: flex;
     flex-direction: column;
     width: 93.1%;  /*1340px*/
-    gap: 25px; 
+    gap: 35px; 
 }
 
 .section_1_title{
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 100%;  
+    gap: 8px;
 }
-
+.section_1_title h1, h3, h4 {
+    margin: 0px;
+}
 .research_bar{
     display: flex;
     align-items: center;
@@ -411,15 +417,16 @@ h5{
 .line_activity{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 30px;    
-    padding: 30px;
+    
 }
 .card_activity{
     display: flex;
     flex-direction: column;
     position: relative;
     background: white;
-    width: 23.25%; /* 297.5px */
+    width: 22.25%; /* 297.5px */
     height: 439px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
@@ -438,9 +445,9 @@ h5{
  }
 
  .card_activity_title {
-    height: 59px;
-    margin: 0px;
-    padding: 10px ;
+    display: flex;
+    align-items: center;
+    padding: 20px 19px 20px 19px;
     border-radius: 0px 0px 20px 20px;
     gap: 10px;
  }
@@ -523,8 +530,18 @@ html{
     }
 
     .section_3 {
-        width: 100%;
+        align-items: center;
+        width: 93.1%;
         height: auto;
+    }
+    .line_activity{
+        width: 93.1%;
+        height: auto;
+        gap: 15px;
+    }
+    .title_activity {
+        width: 93.1%;
+        padding: 0px;
     }
 
     .card_activity{
@@ -538,11 +555,8 @@ html{
         border-radius: 20px 20px 0px 0px;  
     }
     
-    .card_activity_title {
-        height: 50px;
-    }
     .footer_container{
-        width: 100%;
+        width: 93.1%;
     }
 }
 
@@ -702,7 +716,7 @@ html{
     }
 
     .card_left{
-        width: 93%;
+        width: 100%;
         height: auto;
     }
 
@@ -721,16 +735,26 @@ html{
         width: 100%;
     }
 
+    .card_container_right{
+        background-color: white;
+    }
 /*Css section_3*/
 
     .section_3{
-        width: 100%;
-        height: auto;
+        width: 93.1%;
+        align-items: center;
     }
 
     .line_activity {
         flex-direction: column;
+        width: 84%;
         height: auto;
+        gap: 15px;
+    }
+
+    .title_activity {
+        width: 93.1%;
+        padding: 0px;
     }
   
     .card_activity{
@@ -751,6 +775,7 @@ html{
 
     .footer_container {
         flex-direction: column;
+        width: 100%;
         height: auto;
     }
 
