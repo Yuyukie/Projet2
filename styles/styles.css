@@ -357,6 +357,7 @@ h5{
 }
 
 .card_right{
+    position: relative;
     display: flex;
     box-sizing: border-box;
     width: 100%; /*429px*/
