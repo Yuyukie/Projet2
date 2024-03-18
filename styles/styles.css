@@ -607,7 +607,7 @@ html{
         width: 100%;
         border-bottom: 2px solid #F2F2F2;
         text-align: center; 
-        padding: 0px;
+
     }
     .nav_link a:hover {
         border-top: none;
@@ -673,7 +673,6 @@ html{
 
     .filter{
         flex-direction: column;
-        align-items: start;
         width: 100%;
         height: auto;
     }
